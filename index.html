@@ -37,11 +37,12 @@
                 tabindex="-1"
                 class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
               >
-                <li><a>Item 1</a></li>
+                <li><a>Home</a></li>
                 <li>
-                  <a>Parent</a>
+                  <a>Products</a>
                 </li>
-                <li><a>Item 3</a></li>
+                <li><a>About</a></li>
+                <li><a>Contact</a></li>
               </ul>
             </div>
             <a class="btn btn-ghost text-xl text-blue-600 font-bold"
@@ -64,8 +65,87 @@
         </div>
       </nav>
       <!-- banner -->
+      <section class="relative h-[90vh] flex items-center">
+        <div class="absolute inset-0 z-0">
+          <img
+            src="/Assets/banner-image.png"
+            alt="Banner Image"
+            class="absolute w-full h-full object-cover inset-0 brightness-50"
+          />
+        </div>
+        <!-- <div class="absolute inset-0 z-10 bg-black/50"></div> -->
+        <div class="relative z-10 px-16 max-w-xl ml-[10%] pl-10">
+          <h1 class="text-4xl font-extrabold text-white">
+            Best Collection For You
+          </h1>
+          <p class="text-sm text-gray-300 mt-2">
+            Explore our exclusive range of products, handpicked just for you.
+            From trendy fashion to cutting-edge gadgets, we have everything you
+            need to elevate your lifestyle.
+          </p>
+          <button class="btn btn-primary mt-4 bg-blue-600">Shop Now</button>
+        </div>
+      </section>
     </header>
-    <main></main>
+    <main>
+      <!-- why choose us -->
+      <section class="container mx-auto py-16">
+        <h2 class="text-3xl font-bold text-center mb-8">Why Choose Us?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="card bg-base-100 shadow-xl">
+            <div class="card-body items-center text-center">
+              <div class="avatar">
+                <div
+                  class="w-16 h-16 rounded-full bg-blue-500 flex items-center justify-center text-white text-xl font-bold"
+                >
+                  Q
+                </div>
+              </div>
+              <h3 class="card-title">Quality Products</h3>
+              <p>
+                We offer a wide range of high-quality products that are
+                carefully selected to meet your needs and preferences.
+              </p>
+            </div>
+          </div>
+
+          <div class="card bg-base-100 shadow-xl">
+            <div class="card-body items-center text-center">
+              <div class="avatar">
+                <div
+                  class="w-16 h-16 rounded-full bg-green-500 flex items-center justify-center text-white text-xl font-bold"
+                >
+                  S
+                </div>
+              </div>
+              <h3 class="card-title">Secure Shopping</h3>
+              <p>
+                Your safety is our priority. We use advanced security measures
+                to protect your personal and payment information.
+              </p>
+            </div>
+          </div>
+
+          <div class="card bg-base-100 shadow-xl">
+            <div class="card-body items-center text-center">
+              <div class="avatar">
+                <div
+                  class="w-16 h-16 rounded-full bg-yellow-500 flex items-center justify-center text-white text-xl font-bold"
+                >
+                  D
+                </div>
+              </div>
+              <h3 class="card-title">Fast Delivery</h3>
+              <p>
+                Get your products delivered quickly and reliably to your
+                doorstep with our fast shipping options.
+              </p>
+            </div>
+            <div
+          </div>
+        </div>
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
