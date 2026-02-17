@@ -27,7 +27,7 @@ const trendingDisplay = (products) => {
     </div>
 
     <!-- Category -->
-    <p class="text-xs text-gray-500 uppercase mb-1 bg-blue-200 rounded-full w-2/10 p-1">
+    <p class="text-xs text-gray-500 uppercase mb-1 bg-blue-200 rounded-full w-3/10 p-2">
       ${data.category}
     </p>
 
@@ -46,9 +46,14 @@ const trendingDisplay = (products) => {
       <span class="text-blue-600 font-bold text-lg">
         $${data.price}
       </span>
-      <span class="text-yellow-500 text-sm">
-         ${data.rating.rate} (${data.rating.count})
-      </span>
+    <div class="flex items-center gap-1 text-sm text-yellow-500">
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="gold" viewBox="0 0 24 24">
+    <path d="M12 .587l3.668 7.431L24 9.588l-6 5.847 1.417 8.249L12 18.896 4.583 23.684 6 15.435 0 9.588l8.332-1.57L12 .587z"/>
+  </svg>
+
+  <!-- Rating text -->
+  <span>${data.rating.rate} (${data.rating.count})</span>
+</div>
     </div>
 
     <!-- Button -->
